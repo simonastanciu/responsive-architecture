@@ -1,0 +1,531 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+/*HEADER + NAVI*/
+header {
+    width: 100%;
+    height: 570px;
+    background-image: url(../assets/bg-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+}
+
+.black-overlay-header, .black-overlay {
+    width: 100%;
+    height: 570px;
+    background-color: #2b2b2b;
+}
+
+.black-overlay-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.logo-social {
+    width: 300px;
+    height: 350px;
+    background-color: #2b2b2b;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo-social div:nth-child(1) {
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: right;
+    padding: 30px 50px;
+}
+
+.logo-social div:nth-child(2) {
+    border: 1px solid #3d3d3d;
+    width: 50px;
+    transform: rotate(90deg);
+    margin: 5px 0 40px 30px;
+}
+
+.logo-social div:nth-child(3) i {
+    width: 50px;
+    font-size: 45px;
+    color: #3d3d3d;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px 0;
+    margin: 5px 30px;
+}
+
+.menu {
+    width: 100%;
+    position: relative;
+    height: 120px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu a {
+    font-size: 21px;
+    font-weight: 200;
+    letter-spacing: -1px;
+    color: white;
+    text-decoration: none;
+    padding: 30px 35px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.title {
+    width: fit-content;
+    font-size: 100px;
+    font-weight: 300;
+    color: white;
+    position: absolute;
+    bottom: 35%;
+    right: 20%;
+}
+
+/*CONTENT*/
+.mobile-content {
+    display: none;
+}
+
+section {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.concert-hall-wrapper, .modern-bedroom-1-wrapper, .modern-hotel-wrapper, .modern-bedroom-2-wrapper, .modern-library-wrapper, .modern-kitchen-wrapper {
+    width: 33.33%;
+    height: 600px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.concert-hall-wrapper {
+    background-image: url(../assets/concert-hall.jpg);
+}
+
+.modern-bedroom-1-wrapper {
+    background-image: url(../assets/bedroom-1.jpg);
+}
+
+.modern-hotel-wrapper { 
+    background-image: url(../assets/hotel.jpg);
+}
+
+.modern-bedroom-2-wrapper {
+    background-image: url(../assets/bedroom-2.jpg);
+}
+
+.modern-library-wrapper {
+    background-image: url(../assets/library.jpg);
+}
+
+.modern-kitchen-wrapper {
+    background-image: url(../assets/kitchen.jpg);
+}
+
+.black-overlay {
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.75;
+    z-index: 0;
+}
+
+.project-location {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: -1px;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+
+.project-type-1, .project-type-2 {
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    transform: rotate(-90deg);
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.project-type-1 {
+    bottom: 95px;
+    left: -40px;
+}
+
+.project-type-2 {
+    bottom: 63px;
+    left: -10px
+}
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    padding: 60px;
+    background-color: #2b2b2b;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.top-footer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-footer a {
+    box-sizing: border-box;
+    background-color: #3d3d3d;
+    color: white;
+    width: fit-content;
+    border-radius: 40px;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.top-footer div {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 50px 0 20px 0;
+}
+
+.top-footer span {
+    color:#c09c78;
+}
+
+form {
+    width: 750px;
+    box-sizing: border-box;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+form div:nth-child(1) {
+    width: 60%;
+    height: 100px;
+}
+
+#messageMobile {
+    display: none;
+}
+
+#firstName, #yourNumber, #yourEmail, #yourCompany, #message {
+    padding: 15px 20px;
+    margin: 5px;
+    background-color:#3d3d3d;
+    border: none;
+}
+
+#message {
+    width: 150px;
+    height: 70px;
+    margin: 4px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+::placeholder {
+    color: white;
+}
+
+.submit-button {
+    width: fit-content;
+    position: relative;
+    margin: 20px auto;
+}
+
+button {
+    background-color: #c09c78;
+    border-radius: 40px;
+    border: none;
+    padding: 15px 65px 15px 55px;
+    font-size: 15px;
+    color: white;
+}
+
+.submit-button i {
+    position: absolute;
+    top: 16px;
+    right: 45px;
+}
+
+.mobile-form {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    /*HEADER NAVI TABLET*/
+    header {
+        height: 400px;
+    }
+
+    .black-overlay-header {
+        height: 400px;
+    }
+
+    .logo-social {
+        width: 230px;
+        height: 290px;
+    }
+
+    .logo-social div:nth-child(1) {
+        font-size: 35px;
+    }
+
+    .logo-social div:nth-child(2) {
+        width: 30px;
+        margin: 15px 0 25px 40px;
+    }
+
+    .logo-social div:nth-child(3) i {
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 60px;
+        text-align: center;
+        letter-spacing: 5px;
+        bottom: 100px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+        color: lightgray;
+        position: absolute;
+        font-size: 50px;
+        top: 40px;
+        right: 50px;
+    }
+
+/*CONTENT*/
+    section {
+        flex-direction: column;
+        height: 1200px;
+    }
+
+    .black-overlay {
+        height: 400px;
+    }
+
+    .concert-hall-wrapper, .modern-bedroom-1-wrapper, .modern-hotel-wrapper, .modern-bedroom-2-wrapper, .modern-library-wrapper, .modern-kitchen-wrapper {
+        width: 50%;
+        height: 400px;
+    }  
+
+    .project-location, .project-type-1, .project-type-2 {
+        display: none;
+    }
+
+    .mobile-content {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-location-mobile {
+        font-size: 28px;
+        font-weight: 200;
+        letter-spacing: -1px;
+        color: white;
+        text-transform: uppercase;
+        align-self: center;
+    }
+
+    .project-location-mobile span {
+        color: #c09c78;
+    }
+
+    .project-type-mobile {
+        font-size: 22px;
+        font-weight: 100;
+        letter-spacing: 5px;
+        color: white;
+        text-transform: uppercase;
+        align-self: center;
+    }
+    
+    .mobile-form {
+        display: none;
+    }
+
+    /*FOOTER*/
+    footer {
+        padding: 10px 0;
+    }
+
+    .top-footer a {
+        display: none;
+    }
+
+    .top-footer div {
+        margin: 30px 0;
+    }
+
+    form {
+        width: 65%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    form div:nth-child(1) {
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    form div:nth-child(2) {
+        width: 100%;
+        text-align: center;
+    }
+
+    #message {
+        display: none;   
+    }
+
+    #messageMobile {
+        display: block;
+        height: 60px;
+        padding: 12px 20px;
+        margin: 5px;
+    }
+
+    #firstName, #yourNumber, #yourEmail, #yourCompany, #messageMobile {
+        padding: 12px 20px;
+        background-color:#3d3d3d;
+        color: white;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+
+@media (max-width:790px) {
+    header {
+        height: 250px;
+    }
+
+    .black-overlay-header {
+        height: 250px;
+    }
+
+    .logo-social {
+        width: 120px;
+        height: 150px;
+    }
+
+    .logo-social div:nth-child(1) {
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+
+    .logo-social div:nth-child(2) {
+        width: 15px;
+        margin: 5px 0 10px 25px;
+    }
+
+    .logo-social div:nth-child(3) i {
+        font-size: 15px;
+        margin: 0 10px;
+    }
+
+    .title {
+        font-size: 50px;
+        bottom: 25px;
+    }
+
+    .menu-mobile {
+        font-size: 32px;
+        top: 20px;
+        right: 30px;
+    }
+
+/*CONTENT*/
+    section {
+        height: 1800px;
+    }
+
+    .black-overlay {
+        height: 300px;
+    }
+
+    .concert-hall-wrapper, .modern-bedroom-1-wrapper, .modern-hotel-wrapper, .modern-bedroom-2-wrapper, .modern-library-wrapper, .modern-kitchen-wrapper {
+        width: 100%;
+        height: 300px;
+    }    
+
+    .mobile-content {
+        height: 300px;
+    }
+
+    .project-location-mobile {
+        font-size: 25px;
+        font-weight: 200;
+    }
+    
+    .project-type-mobile {
+        font-size: 18px;
+    }
+            
+/*FOOTER*/
+    form {
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+
+    .submit-button {
+        position: absolute;
+        right: 35px;
+    }
+
+    button {
+        padding: 10px 45px 10px 35px;
+        font-size: 12px;
+    }
+
+    .submit-button i {
+        font-size: 12px;
+        top: 11px;
+        right: 27px;
+    }
+}
