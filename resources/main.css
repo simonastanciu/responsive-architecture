@@ -109,6 +109,7 @@ section {
     flex-wrap: wrap;
 }
 
+/* putem avea o clasa comuna pentru setul acesta de reguli, te ajuta mult mai mult. De cate ori adaugi inca un element, trebuie sa modifici si aici, nu este optim */
 .concert-hall-wrapper, .modern-bedroom-1-wrapper, .modern-hotel-wrapper, .modern-bedroom-2-wrapper, .modern-library-wrapper, .modern-kitchen-wrapper {
     width: 33.33%;
     height: 600px;
@@ -241,6 +242,7 @@ form div:nth-child(1) {
     display: none;
 }
 
+/* si aici te sfatuiesc sa optezi pentru o clasa comuna */
 #firstName, #yourNumber, #yourEmail, #yourCompany, #message {
     padding: 15px 20px;
     margin: 5px;
@@ -335,6 +337,7 @@ button {
 /*CONTENT*/
     section {
         flex-direction: column;
+        /* nu as fixa height-ul aici, in acest caz mai ok ca height-ul parintelui sa fie determinat de suma height-urilor nodurilor componente */
         height: 1200px;
     }
 
@@ -342,6 +345,7 @@ button {
         height: 400px;
     }
 
+    /* clasa comuna te-ar fi ajutat si aici */
     .concert-hall-wrapper, .modern-bedroom-1-wrapper, .modern-hotel-wrapper, .modern-bedroom-2-wrapper, .modern-library-wrapper, .modern-kitchen-wrapper {
         width: 50%;
         height: 400px;
