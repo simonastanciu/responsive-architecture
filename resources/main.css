@@ -153,12 +153,14 @@ section {
 }
 
 .project-location {
+    width: 220px;
     font-size: 25px;
     font-weight: 200;
     letter-spacing: -1px;
     color: white;
     text-transform: uppercase;
     position: relative;
+    z-index: 1;
     top: 20px;
     left: 40px;
 }
@@ -186,7 +188,6 @@ section {
 /*FOOTER*/
 footer {
     width: 100%;
-    height: 500px;
     box-sizing: border-box;
     padding: 60px;
     background-color: #2b2b2b;
@@ -231,6 +232,7 @@ form {
     margin: 30px auto;
     display: flex;
     justify-content: center;
+    flex-flow: row wrap;
 }
 
 form div:nth-child(1) {
@@ -337,8 +339,9 @@ button {
 /*CONTENT*/
     section {
         flex-direction: column;
+        flex-flow: row wrap;
         /* nu as fixa height-ul aici, in acest caz mai ok ca height-ul parintelui sa fie determinat de suma height-urilor nodurilor componente */
-        height: 1200px;
+        /* height: 1200px; */
     }
 
     .black-overlay {
@@ -349,50 +352,30 @@ button {
     .concert-hall-wrapper, .modern-bedroom-1-wrapper, .modern-hotel-wrapper, .modern-bedroom-2-wrapper, .modern-library-wrapper, .modern-kitchen-wrapper {
         width: 50%;
         height: 400px;
-    }  
-
-    .project-location, .project-type-1, .project-type-2 {
-        display: none;
-    }
-
-    .mobile-content {
-        width: 100%;
-        height: 400px;
-        position: relative;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
     }
 
-    .project-location-mobile {
-        font-size: 28px;
-        font-weight: 200;
-        letter-spacing: -1px;
-        color: white;
-        text-transform: uppercase;
-        align-self: center;
+    .project-location {
+        width: fit-content;
+        position: static;
+    }
+    
+    .project-type-1, .project-type-2 {
+        transform: rotate(0deg);
+        position: static;
     }
 
-    .project-location-mobile span {
+    .project-location span {
         color: #c09c78;
     }
 
-    .project-type-mobile {
-        font-size: 22px;
-        font-weight: 100;
-        letter-spacing: 5px;
-        color: white;
-        text-transform: uppercase;
-        align-self: center;
-    }
-    
-    .mobile-form {
-        display: none;
-    }
 
     /*FOOTER*/
     footer {
+
         padding: 10px 0;
     }
 
@@ -484,10 +467,6 @@ button {
     }
 
 /*CONTENT*/
-    section {
-        height: 1800px;
-    }
-
     .black-overlay {
         height: 300px;
     }
@@ -496,30 +475,21 @@ button {
         width: 100%;
         height: 300px;
     }    
-
-    .mobile-content {
-        height: 300px;
-    }
-
-    .project-location-mobile {
-        font-size: 25px;
-        font-weight: 200;
-    }
-    
-    .project-type-mobile {
-        font-size: 18px;
-    }
             
 /*FOOTER*/
+    footer {
+        height: 500px;
+        position: relative;
+    }
+
     form {
         width: 100%;
-        margin: 0;
-        position: relative;
     }
 
     .submit-button {
         position: absolute;
         right: 35px;
+        bottom: 10px;
     }
 
     button {

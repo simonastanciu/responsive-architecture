@@ -34,9 +34,9 @@
             </nav>
             
             <!-- putem folosi <nav> si aici, e corect din punct de vede structural -->
-            <div class="menu-mobile">
+            <nav class="menu-mobile">
                 <i class="fas fa-bars"></i>
-            </div>
+            </nav>
 
             <div class="title">PROJECTS</div>
         </header>
@@ -44,71 +44,39 @@
         <section> 
             <div class="concert-hall-wrapper">
                 <div class="black-overlay"></div>
-                <div class="project-location">concert hall <br> in new york</div>
+                <div class="project-location">concert hall <span>in new york</span></div>
                 <div class="project-type-1">architecture</div>
-
                 <!-- aici nu merge schema asta, adica merge, dar e prea usor sa adaptam centrand ca sa merite continutul duplicat -->
-                <div class="mobile-content">
-                    <div class="project-location-mobile">concert hall <span>in new york</span></div>
-                    <div class="project-type-mobile">architecture</div>
-                </div>
             </div>
 
             <div class="modern-bedroom-1-wrapper">
                 <div class="black-overlay"></div>
-                <div class="project-location">modern bedroom <br> in gorizia</div>
+                <div class="project-location">modern bedroom <span>in gorizia</span></div>
                 <div class="project-type-2">interior</div>  
-
-                <div class="mobile-content"> 
-                    <div class="project-location-mobile">modern bedroom <span>in gorizia</span></div>
-                    <div class="project-type-mobile">interior</div>  
-                </div>
-
             </div>
 
             <div class="modern-hotel-wrapper">
                 <div class="black-overlay"></div>
-                <div class="project-location">modern hotel <br>in london</div>
+                <div class="project-location">modern hotel <span>in london</span></div>
                 <div class="project-type-1">architecture</div>
-
-                <div class="mobile-content">
-                    <div class="project-location-mobile">modern hotel <span>in london</span></div>
-                    <div class="project-type-mobile">architecture</div>
-                </div>
             </div>
 
             <div class="modern-bedroom-2-wrapper">
                 <div class="black-overlay"></div>
-                <div class="project-location">modern bedroom <br> in paris</div>
+                <div class="project-location">modern bedroom <span>in paris</span></div>
                 <div class="project-type-2">interior</div>
-
-                <div class="mobile-content">
-                    <div class="project-location-mobile">modern bedroom <span>in paris</span></div>
-                    <div class="project-type-mobile">interior</div>
-                </div>
             </div>
 
             <div class="modern-library-wrapper">
                 <div class="black-overlay"></div>
-                <div class="project-location">modern library <br> in chicago</div>
+                <div class="project-location">modern library <span>in chicago</span></div>
                 <div class="project-type-1">architecutre</div>
-
-                <div class="mobile-content">
-                    <div class="project-location-mobile">modern library <span>in chicago</span></div>
-                    <div class="project-type-mobile">architecutre</div>
-                </div>
-
             </div>
 
             <div class="modern-kitchen-wrapper">
                 <div class="black-overlay"></div>
-                <div class="project-location">modern kitchen <br> in bucharest</div>
+                <div class="project-location">modern kitchen <span>in bucharest</span></div>
                 <div class="project-type-2">interior</div>  
-
-                <div class="mobile-content">
-                    <div class="project-location-mobile">modern kitchen <span>in bucharest</span></div>
-                    <div class="project-type-mobile">interior</div> 
-                </div>
             </div>
         </section>
 
@@ -129,13 +97,13 @@
                 <div>
                     <textarea required name="message" id="message" placeholder="Message"></textarea>
                 </div>
+                
+                <div class="submit-button">
+                    <!-- avem nevoie de button ca si child node pe form, ne va fi mult mai usor la submit cand manipulam datele cu JS -->
+                    <button type="submit">SEND </button>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
             </form>
-
-            <div class="submit-button">
-                <!-- avem nevoie de button ca si child node pe form, ne va fi mult mai usor la submit cand manipulam datele cu JS -->
-                <button type="submit">SEND </button>
-                <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
         </footer>
     </body>
 </html>
