@@ -32,48 +32,68 @@
                 <a href="">BLOG</a>
                 <a href="">CONTACT US</a>
             </nav>
-            
-            <!-- putem folosi <nav> si aici, e corect din punct de vede structural -->
+
             <nav class="menu-mobile">
-                <i class="fas fa-bars"></i>
+                <i id="mobileMenu" class="fas fa-bars"></i>
             </nav>
 
+            <div id="extendedMenu" class="extended-menu hidden">
+                <div class="top-header"> 
+                    <div>go.arch</div>
+                    <i id="closeButton" class="fas fa-times"></i>
+                </div>
+                    
+                <div class="menu-mobile-items">
+                    <a href="">HOME</a>
+                    <a href="">ABOUT US</a>
+                    <a href="">PROJECT</a>
+                    <a href="">BLOG</a>
+                    <a href="">CONTACT US</a>
+                </div>
+
+                <div class="menu-social-icons">
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-facebook-f"></i>
+                </div>  
+
+                <hr>  
+            </div>
+            
             <div class="title">PROJECTS</div>
         </header>
 
         <section> 
-            <div class="concert-hall-wrapper">
+            <div class="content-wrapper">
                 <div class="black-overlay"></div>
                 <div class="project-location">concert hall <span>in new york</span></div>
                 <div class="project-type-1">architecture</div>
-                <!-- aici nu merge schema asta, adica merge, dar e prea usor sa adaptam centrand ca sa merite continutul duplicat -->
             </div>
 
-            <div class="modern-bedroom-1-wrapper">
+            <div class="content-wrapper">
                 <div class="black-overlay"></div>
                 <div class="project-location">modern bedroom <span>in gorizia</span></div>
                 <div class="project-type-2">interior</div>  
             </div>
 
-            <div class="modern-hotel-wrapper">
+            <div class="content-wrapper">
                 <div class="black-overlay"></div>
                 <div class="project-location">modern hotel <span>in london</span></div>
                 <div class="project-type-1">architecture</div>
             </div>
 
-            <div class="modern-bedroom-2-wrapper">
+            <div class="content-wrapper">
                 <div class="black-overlay"></div>
                 <div class="project-location">modern bedroom <span>in paris</span></div>
                 <div class="project-type-2">interior</div>
             </div>
 
-            <div class="modern-library-wrapper">
+            <div class="content-wrapper">
                 <div class="black-overlay"></div>
                 <div class="project-location">modern library <span>in chicago</span></div>
                 <div class="project-type-1">architecutre</div>
             </div>
 
-            <div class="modern-kitchen-wrapper">
+            <div class="content-wrapper">
                 <div class="black-overlay"></div>
                 <div class="project-location">modern kitchen <span>in bucharest</span></div>
                 <div class="project-type-2">interior</div>  
@@ -99,11 +119,15 @@
                 </div>
                 
                 <div class="submit-button">
-                    <!-- avem nevoie de button ca si child node pe form, ne va fi mult mai usor la submit cand manipulam datele cu JS -->
                     <button type="submit">SEND </button>
                     <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
             </form>
         </footer>
+
+        <script src="resources/main.js"></script>
+        <noscript>
+            NO JS!
+        </noscript>
     </body>
 </html>

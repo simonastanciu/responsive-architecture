@@ -83,7 +83,7 @@ header {
     padding: 30px 35px;
 }
 
-.menu-mobile {
+.menu-mobile, .hidden {
     display: none;
 }
 
@@ -98,10 +98,6 @@ header {
 }
 
 /*CONTENT*/
-.mobile-content {
-    display: none;
-}
-
 section {
     font-family: 'Open Sans', sans-serif;
     width: 100%;
@@ -110,7 +106,16 @@ section {
 }
 
 /* putem avea o clasa comuna pentru setul acesta de reguli, te ajuta mult mai mult. De cate ori adaugi inca un element, trebuie sa modifici si aici, nu este optim */
-.concert-hall-wrapper, .modern-bedroom-1-wrapper, .modern-hotel-wrapper, .modern-bedroom-2-wrapper, .modern-library-wrapper, .modern-kitchen-wrapper {
+/* .concert-hall-wrapper, .modern-bedroom-1-wrapper, .modern-hotel-wrapper, .modern-bedroom-2-wrapper, .modern-library-wrapper, .modern-kitchen-wrapper {
+    width: 33.33%;
+    height: 600px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+.content-wrapper {
     width: 33.33%;
     height: 600px;
     position: relative;
@@ -119,27 +124,27 @@ section {
     background-position: center;
 }
 
-.concert-hall-wrapper {
+section .content-wrapper:nth-child(1) {
     background-image: url(../assets/concert-hall.jpg);
 }
 
-.modern-bedroom-1-wrapper {
+section .content-wrapper:nth-child(2) {
     background-image: url(../assets/bedroom-1.jpg);
 }
 
-.modern-hotel-wrapper { 
+section .content-wrapper:nth-child(3) { 
     background-image: url(../assets/hotel.jpg);
 }
 
-.modern-bedroom-2-wrapper {
+section .content-wrapper:nth-child(4) {
     background-image: url(../assets/bedroom-2.jpg);
 }
 
-.modern-library-wrapper {
+section .content-wrapper:nth-child(5) {
     background-image: url(../assets/library.jpg);
 }
 
-.modern-kitchen-wrapper {
+section .content-wrapper:nth-child(6) {
     background-image: url(../assets/kitchen.jpg);
 }
 
@@ -336,20 +341,87 @@ button {
         right: 50px;
     }
 
-/*CONTENT*/
+    /*EXTENDED MENU*/
+    .extended-menu {
+        background-color: #2b2b2b;
+        position: relative;
+        z-index: 3;
+        width: 100%;
+    }
+
+    .top-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top-header div {
+        font-size: 40px;
+        padding: 30px 50px;
+        font-weight: 100;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .top-header i {
+        font-size: 70px;
+        padding: 30px 50px;
+        color: orange;
+    }
+
+    .menu-mobile-items {
+        display: flex;
+        flex-direction: column;
+        margin: 70px 0 120px;
+    }
+
+    .menu-mobile-items a {
+        font-size: 50px;
+        padding: 30px 50px;
+        color: white;
+        font-weight: 300;
+        letter-spacing: 5px;
+        text-decoration: none;
+        text-transform: lowercase;
+    }
+
+    .menu-mobile-items a::first-letter {
+        text-transform: uppercase;
+    }
+    
+    .menu-social-icons {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid gray;
+    }
+
+    .menu-social-icons i {
+        font-size: 60px;
+        padding: 40px;
+        color: gray;
+    }
+    
+    hr {
+        border: 1px solid #3d3d3d;
+        width: 150px;
+        transform: rotate(90deg);
+        position: absolute;
+        left: 42%;
+        bottom: 65px;
+    }
+
+    /*CONTENT*/
     section {
         flex-direction: column;
         flex-flow: row wrap;
-        /* nu as fixa height-ul aici, in acest caz mai ok ca height-ul parintelui sa fie determinat de suma height-urilor nodurilor componente */
-        /* height: 1200px; */
     }
 
     .black-overlay {
         height: 400px;
     }
 
-    /* clasa comuna te-ar fi ajutat si aici */
-    .concert-hall-wrapper, .modern-bedroom-1-wrapper, .modern-hotel-wrapper, .modern-bedroom-2-wrapper, .modern-library-wrapper, .modern-kitchen-wrapper {
+    .content-wrapper {
         width: 50%;
         height: 400px;
         display: flex;
@@ -375,7 +447,6 @@ button {
 
     /*FOOTER*/
     footer {
-
         padding: 10px 0;
     }
 
@@ -466,12 +537,42 @@ button {
         right: 30px;
     }
 
+    /*EXTENDED MENU*/
+    .top-header div {
+        font-size: 25px;
+        padding: 10px 30px;
+    }
+
+    .top-header i {
+        font-size: 35px;
+        padding: 15px 30px;
+    }
+
+    .menu-mobile-items a {
+        font-size: 30px;
+        padding: 10px 30px;
+    }
+
+    .menu-social-icons {
+        height: 100px;
+    }
+
+    .menu-social-icons i {
+        font-size: 40px;
+        padding: 30px;
+    }
+    
+    hr {
+        width: 95px;
+        bottom: 40px;
+    }
+
 /*CONTENT*/
     .black-overlay {
         height: 300px;
     }
 
-    .concert-hall-wrapper, .modern-bedroom-1-wrapper, .modern-hotel-wrapper, .modern-bedroom-2-wrapper, .modern-library-wrapper, .modern-kitchen-wrapper {
+    .content-wrapper {
         width: 100%;
         height: 300px;
     }    
