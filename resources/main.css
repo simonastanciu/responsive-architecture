@@ -105,16 +105,6 @@ section {
     flex-wrap: wrap;
 }
 
-/* putem avea o clasa comuna pentru setul acesta de reguli, te ajuta mult mai mult. De cate ori adaugi inca un element, trebuie sa modifici si aici, nu este optim */
-/* .concert-hall-wrapper, .modern-bedroom-1-wrapper, .modern-hotel-wrapper, .modern-bedroom-2-wrapper, .modern-library-wrapper, .modern-kitchen-wrapper {
-    width: 33.33%;
-    height: 600px;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-} */
-
 .content-wrapper {
     width: 33.33%;
     height: 600px;
@@ -344,9 +334,10 @@ button {
     /*EXTENDED MENU*/
     .extended-menu {
         background-color: #2b2b2b;
-        position: relative;
+        position: fixed;
         z-index: 3;
         width: 100%;
+        height: 100%;
     }
 
     .top-header {
@@ -386,6 +377,12 @@ button {
 
     .menu-mobile-items a::first-letter {
         text-transform: uppercase;
+    }
+
+    .icons-position {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
     }
     
     .menu-social-icons {
