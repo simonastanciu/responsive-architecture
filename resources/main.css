@@ -170,7 +170,7 @@ header {
 /*FOOTER*/
 footer {
     box-sizing: border-box;
-    padding: 60px;
+    padding: 110px;
     background-color: #2b2b2b;
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -207,24 +207,6 @@ footer {
     color:#c09c78;
 }
 
-form {
-    width: 700px;
-    box-sizing: border-box;
-    margin: 30px auto;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-}
-
-form div:nth-child(1) {
-    width: 70%;
-    height: 120px;
-}
-
-#messageMobile {
-    display: none;
-}
-
 /* si aici te sfatuiesc sa optezi pentru o clasa comuna */
 #firstName, #yourNumber, #yourEmail, #yourCompany, #message {
     padding: 15px 20px;
@@ -234,9 +216,7 @@ form div:nth-child(1) {
 }
 
 #message {
-    width: 200px;
-    height: 70px;
-    margin: 4px;
+    color: white;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -261,7 +241,7 @@ form div:nth-child(1) {
 
 .submit-button i {
     position: absolute;
-    top: 19px;
+    top: 18px;
     right: 45px;
 }
 
@@ -365,6 +345,10 @@ form div:nth-child(1) {
         text-transform: uppercase;
     }
 
+    .menu-mobile-items a:hover {
+        color: orange;
+    }
+
     .icons-position {
         width: 100%;
         position: absolute;
@@ -420,6 +404,14 @@ form div:nth-child(1) {
 
 
     /*FOOTER*/
+    .desktop-form {
+        display: none;
+    }
+
+    .mobile-form {
+        display: block;
+    }
+
     footer {
         padding: 10px 0;
     }
@@ -432,38 +424,7 @@ form div:nth-child(1) {
         margin: 30px 0;
     }
 
-    /* form {
-        width: 65%;
-        margin: 0 auto;
-        flex-direction: column;
-    } */
-
-    form div:nth-child(1) {
-        width: 90%;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-    }
-
-    form div:nth-child(2) {
-        width: 100%;
-        text-align: center;
-    }
-
-    #message {
-        display: none;   
-    }
-
-    #messageMobile {
-        display: block;
-        height: 60px;
-        padding: 12px 20px;
-        margin: 5px;
-    }
-
-    #firstName, #yourNumber, #yourEmail, #yourCompany, #messageMobile {
-        padding: 12px 20px;
+    #firstName, #yourNumber, #yourEmail, #yourCompany {
         background-color:#3d3d3d;
         color: white;
         border: none;
@@ -556,10 +517,6 @@ form div:nth-child(1) {
         position: relative;
     }
 
-    /* form {
-        width: 100%;
-    } */
-
     .submit-button {
         position: absolute;
         right: 35px;
@@ -573,7 +530,7 @@ form div:nth-child(1) {
 
     .submit-button i {
         font-size: 12px;
-        top: 11px;
+        top: 14px;
         right: 27px;
     }
 }

@@ -113,22 +113,35 @@
                 <div>get <span>in touch</span></div>
             </div>   
 
-            <form class="form-group">
+            <form class="container desktop-form">
                 <div class="row">
-                    <div class="col-lg-4 col-sm"> 
+                    <div class="form-group col-lg-4 col-sm-12"> 
                         <input class="form-control" required type="text" name="yourName" id="firstName" placeholder="Name">
                         <input class="form-control" required type="number" name="yourNumber" id="yourNumber" placeholder="Phone">
                     </div>
-                    <div class="col-lg-4 col-sm">
+                    <div class="form-group col-lg-4 col-sm-12">
                         <input class="form-control" required type="email" name="yourEmail" id="yourEmail" placeholder="E-mail">
                         <input class="form-control" required type="text" name="yourCompany" id="yourCompany" placeholder="Company">
-                        <textarea required name="messageMobile" id="messageMobile" placeholder="Message"></textarea>
                     </div>
                 
-                    <div class="col-lg-4 col-sm">
+                    <div class="form-group col-lg-4 col-sm-12">
                         <textarea class="form-control" required name="message" id="message" placeholder="Message"></textarea>
                     </div>
-                
+                    <div class="submit-button">
+                        <button type="submit" class="btn">SEND </button>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                </div>
+            </form>
+            <form class="container mobile-form">
+                <div class="row">
+                    <div class="form-group col-lg-4 col-sm-12"> 
+                        <input class="form-control" required type="text" name="yourName" id="firstName" placeholder="Name">
+                        <input class="form-control" required type="number" name="yourNumber" id="yourNumber" placeholder="Phone">
+                        <input class="form-control" required type="email" name="yourEmail" id="yourEmail" placeholder="E-mail">
+                        <input class="form-control" required type="text" name="yourCompany" id="yourCompany" placeholder="Company">
+                        <textarea class="form-control" required name="message" id="message" placeholder="Message"></textarea>
+                    </div>
                     <div class="submit-button">
                         <button type="submit" class="btn">SEND </button>
                         <i class="fas fa-long-arrow-alt-right"></i>
