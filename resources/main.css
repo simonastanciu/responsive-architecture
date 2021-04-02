@@ -7,7 +7,6 @@ html, body {
 
 /*HEADER + NAVI*/
 header {
-    width: 100%;
     height: 570px;
     background-image: url(../assets/bg-header.jpg);
     background-size: cover;
@@ -65,22 +64,18 @@ header {
     margin: 5px 30px;
 }
 
-.menu {
-    width: 100%;
-    position: relative;
-    height: 120px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.menu a {
+.nav-item {
     font-size: 21px;
     font-weight: 200;
     letter-spacing: -1px;
     color: white;
     text-decoration: none;
     padding: 30px 35px;
+}
+
+.nav-item:hover {
+    text-decoration: none;
+    color: darkgray;
 }
 
 .menu-mobile, .hidden {
@@ -98,15 +93,7 @@ header {
 }
 
 /*CONTENT*/
-section {
-    font-family: 'Open Sans', sans-serif;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .content-wrapper {
-    width: 33.33%;
     height: 600px;
     position: relative;
     background-size: cover;
@@ -114,27 +101,27 @@ section {
     background-position: center;
 }
 
-section .content-wrapper:nth-child(1) {
+.container-fluid .content-wrapper:nth-child(1) {
     background-image: url(../assets/concert-hall.jpg);
 }
 
-section .content-wrapper:nth-child(2) {
+.container-fluid .content-wrapper:nth-child(2) {
     background-image: url(../assets/bedroom-1.jpg);
 }
 
-section .content-wrapper:nth-child(3) { 
+.container-fluid .content-wrapper:nth-child(3) { 
     background-image: url(../assets/hotel.jpg);
 }
 
-section .content-wrapper:nth-child(4) {
+.container-fluid .content-wrapper:nth-child(4) {
     background-image: url(../assets/bedroom-2.jpg);
 }
 
-section .content-wrapper:nth-child(5) {
+.container-fluid .content-wrapper:nth-child(5) {
     background-image: url(../assets/library.jpg);
 }
 
-section .content-wrapper:nth-child(6) {
+.container-fluid .content-wrapper:nth-child(6) {
     background-image: url(../assets/kitchen.jpg);
 }
 
@@ -182,7 +169,6 @@ section .content-wrapper:nth-child(6) {
 
 /*FOOTER*/
 footer {
-    width: 100%;
     box-sizing: border-box;
     padding: 60px;
     background-color: #2b2b2b;
@@ -222,7 +208,7 @@ footer {
 }
 
 form {
-    width: 750px;
+    width: 700px;
     box-sizing: border-box;
     margin: 30px auto;
     display: flex;
@@ -231,8 +217,8 @@ form {
 }
 
 form div:nth-child(1) {
-    width: 60%;
-    height: 100px;
+    width: 70%;
+    height: 120px;
 }
 
 #messageMobile {
@@ -248,7 +234,7 @@ form div:nth-child(1) {
 }
 
 #message {
-    width: 150px;
+    width: 200px;
     height: 70px;
     margin: 4px;
     font-family: 'Open Sans', sans-serif;
@@ -264,7 +250,7 @@ form div:nth-child(1) {
     margin: 20px auto;
 }
 
-button {
+.btn {
     background-color: #c09c78;
     border-radius: 40px;
     border: none;
@@ -275,7 +261,7 @@ button {
 
 .submit-button i {
     position: absolute;
-    top: 16px;
+    top: 19px;
     right: 45px;
 }
 
@@ -318,7 +304,7 @@ button {
         bottom: 100px;
     }
 
-    .menu {
+    .navbar {
         display: none;
     }
 
@@ -408,27 +394,19 @@ button {
     }
 
     /*CONTENT*/
-    section {
-        flex-direction: column;
-        flex-flow: row wrap;
-    }
-
     .black-overlay {
         height: 400px;
     }
 
     .content-wrapper {
-        width: 50%;
         height: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     .project-location {
         width: fit-content;
-        position: static;
+        position: relative;
+        top: 0;
+        left: 0;
     }
     
     .project-type-1, .project-type-2 {
@@ -454,11 +432,11 @@ button {
         margin: 30px 0;
     }
 
-    form {
+    /* form {
         width: 65%;
         margin: 0 auto;
         flex-direction: column;
-    }
+    } */
 
     form div:nth-child(1) {
         width: 90%;
@@ -569,7 +547,6 @@ button {
     }
 
     .content-wrapper {
-        width: 100%;
         height: 300px;
     }    
             
@@ -579,17 +556,17 @@ button {
         position: relative;
     }
 
-    form {
+    /* form {
         width: 100%;
-    }
+    } */
 
     .submit-button {
         position: absolute;
         right: 35px;
-        bottom: 10px;
+        bottom: -15px;
     }
 
-    button {
+    .btn {
         padding: 10px 45px 10px 35px;
         font-size: 12px;
     }

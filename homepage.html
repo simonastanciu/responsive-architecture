@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Responsive layout 2</title>
+        <title>Responsive bootstrap</title>
         <meta charset="UFT-8">
         <meta name="keywords" content="responsive, layout, css, html">
         <meta name="author" content="Simona Stanciu">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="resources/main.css">
+        
         <link rel="stylesheet" href="bundles/font-awesome/css/all.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
         <script src="bundles/jquery/jquery-3.5.1.min.js"></script>   
+        <link rel="stylesheet" type="text/css" href="bundles/bootstrap-4.6.0-dist/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="resources/main.css">
     </head>
 
     <body>
-        <header>
+        <header class="jumbotron-fluid">
             <div class="black-overlay-header"></div>
             <div class="logo-social">
                 <div>go.arch</div>
@@ -25,13 +27,15 @@
                     <i class="fab fa-facebook-f"></i>
                 </div>    
             </div>
-
-            <nav class="menu">
-                <a href="">HOME</a>
-                <a href="">ABOUT US</a>
-                <a href="">PROJECT</a>
-                <a href="">BLOG</a>
-                <a href="">CONTACT US</a>
+    
+            <nav class="navbar justify-content-end pt-4">
+                <div> 
+                    <a class="nav-item" href="">HOME</a>
+                    <a class="nav-item" href="">ABOUT US</a>
+                    <a class="nav-item" href="">PROJECT</a>
+                    <a class="nav-item" href="">BLOG</a>
+                    <a class="nav-item" href="">CONTACT US</a>
+                </div>
             </nav>
 
             <nav class="menu-mobile">
@@ -64,65 +68,71 @@
             <div class="title">PROJECTS</div>
         </header>
 
-        <section> 
-            <div class="content-wrapper">
-                <div class="black-overlay"></div>
-                <div class="project-location">concert hall <span>in new york</span></div>
-                <div class="project-type-1">architecture</div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 content-wrapper">
+                    <div class="black-overlay"></div>
+                    <div class="project-location">concert hall <span>in new york</span></div>
+                    <div class="project-type-1">architecture</div>
+                </div>
+    
+                <div class="col-lg-4 col-sm-6 content-wrapper">
+                    <div class="black-overlay"></div>
+                    <div class="project-location">modern bedroom <span>in gorizia</span></div>
+                    <div class="project-type-2">interior</div>  
+                </div>
+    
+                <div class="col-lg-4 col-sm-6 content-wrapper">
+                    <div class="black-overlay"></div>
+                    <div class="project-location">modern hotel <span>in london</span></div>
+                    <div class="project-type-1">architecture</div>
+                </div>
+                <div class="col-lg-4 col-sm-6 content-wrapper">
+                    <div class="black-overlay"></div>
+                    <div class="project-location">modern bedroom <span>in paris</span></div>
+                    <div class="project-type-2">interior</div>
+                </div>
+    
+                <div class="col-lg-4 col-sm-6 content-wrapper">
+                    <div class="black-overlay"></div>
+                    <div class="project-location">modern library <span>in chicago</span></div>
+                    <div class="project-type-1">architecutre</div>
+                </div>
+    
+                <div class="col-lg-4 col-sm-6 content-wrapper">
+                    <div class="black-overlay"></div>
+                    <div class="project-location">modern kitchen <span>in bucharest</span></div>
+                    <div class="project-type-2">interior</div>  
+                </div>
             </div>
-
-            <div class="content-wrapper">
-                <div class="black-overlay"></div>
-                <div class="project-location">modern bedroom <span>in gorizia</span></div>
-                <div class="project-type-2">interior</div>  
-            </div>
-
-            <div class="content-wrapper">
-                <div class="black-overlay"></div>
-                <div class="project-location">modern hotel <span>in london</span></div>
-                <div class="project-type-1">architecture</div>
-            </div>
-
-            <div class="content-wrapper">
-                <div class="black-overlay"></div>
-                <div class="project-location">modern bedroom <span>in paris</span></div>
-                <div class="project-type-2">interior</div>
-            </div>
-
-            <div class="content-wrapper">
-                <div class="black-overlay"></div>
-                <div class="project-location">modern library <span>in chicago</span></div>
-                <div class="project-type-1">architecutre</div>
-            </div>
-
-            <div class="content-wrapper">
-                <div class="black-overlay"></div>
-                <div class="project-location">modern kitchen <span>in bucharest</span></div>
-                <div class="project-type-2">interior</div>  
-            </div>
-        </section>
-
-        <footer>
+        </div>
+        
+        <footer class="container-fluid ">
             <div class="top-footer"> 
                 <a href="">more projects</a>
                 <div>get <span>in touch</span></div>
             </div>   
 
-            <form>
-                <div>
-                    <input required type="text" name="yourName" id="firstName" placeholder="Name">
-                    <input required type="number" name="yourNumber" id="yourNumber" placeholder="Phone">
-                    <input required type="email" name="yourEmail" id="yourEmail" placeholder="E-mail">
-                    <input required type="text" name="yourCompany" id="yourCompany" placeholder="Company">
-                    <textarea required name="messageMobile" id="messageMobile" placeholder="Message"></textarea>
-                </div>
-                <div>
-                    <textarea required name="message" id="message" placeholder="Message"></textarea>
-                </div>
+            <form class="form-group">
+                <div class="row">
+                    <div class="col-lg-4 col-sm"> 
+                        <input class="form-control" required type="text" name="yourName" id="firstName" placeholder="Name">
+                        <input class="form-control" required type="number" name="yourNumber" id="yourNumber" placeholder="Phone">
+                    </div>
+                    <div class="col-lg-4 col-sm">
+                        <input class="form-control" required type="email" name="yourEmail" id="yourEmail" placeholder="E-mail">
+                        <input class="form-control" required type="text" name="yourCompany" id="yourCompany" placeholder="Company">
+                        <textarea required name="messageMobile" id="messageMobile" placeholder="Message"></textarea>
+                    </div>
                 
-                <div class="submit-button">
-                    <button type="submit">SEND </button>
-                    <i class="fas fa-long-arrow-alt-right"></i>
+                    <div class="col-lg-4 col-sm">
+                        <textarea class="form-control" required name="message" id="message" placeholder="Message"></textarea>
+                    </div>
+                
+                    <div class="submit-button">
+                        <button type="submit" class="btn">SEND </button>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
                 </div>
             </form>
         </footer>
