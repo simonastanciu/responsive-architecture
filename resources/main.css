@@ -241,12 +241,8 @@ footer {
 
 .submit-button i {
     position: absolute;
-    top: 18px;
+    top: 21px;
     right: 45px;
-}
-
-.mobile-form {
-    display: none;
 }
 
 @media (max-width: 1100px) {
@@ -384,6 +380,10 @@ footer {
 
     .content-wrapper {
         height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .project-location {
@@ -404,14 +404,6 @@ footer {
 
 
     /*FOOTER*/
-    .desktop-form {
-        display: none;
-    }
-
-    .mobile-form {
-        display: block;
-    }
-
     footer {
         padding: 10px 0;
     }
@@ -520,7 +512,7 @@ footer {
     .submit-button {
         position: absolute;
         right: 35px;
-        bottom: -15px;
+        bottom: 5px;
     }
 
     .btn {
