@@ -1,3 +1,4 @@
+// JS version
 // const extendedMenu = document.getElementById('extendedMenu');
 // const mobileMenu = document.getElementById('mobileMenu');
 // const closeButton = document.getElementById('closeButton');
